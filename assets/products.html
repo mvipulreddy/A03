@@ -39,7 +39,16 @@ li a:hover{
 	background-color:blue;
 
 }
+
 	</style>
+  <script type="text/javascript">
+	function multiplyBy()  
+{  
+        num1 = document.getElementById("firstNumber").value;  
+        num2 = document.getElementById("secondNumber").value;  
+        document.getElementById("result").innerHTML = num1 * num2;  
+}  
+</script>
 </head>
 <body>
 
@@ -66,43 +75,30 @@ li a:hover{
   </div>
 </nav>
 	<h1 align="center">ORDER THE BIRD</h1>
-			<form name="the">
-	            Menu:
-						1 peice of eagle = $50.2<br>
-						1 peice of  spparow= $96.7<br>
-						1 peice of Pegion = $100.8
-						<br></br>
-				select your bird choice from the menu <br>
-				<table align="center">	<tr>
-			<td><input type="radio" name="bird" value="eagle"> eagle    
-  <input type="radio" name="bird" value="spparow"> spparow   
-  <input type="radio" name="bird" value="pegion">pegion</td></tr>
-				<tr><td> enter your quantity::</td><td><input type="text"  name="quan"  size="50"></td></tr>
-					
-				<tr><td>Your Total bill :</td><td><input type="text"  name="bill"  size="50"></td></tr>
-				<tr><td></td><td><input type="button" value="calculate" onclick="calculate();"/><input type="reset" value="Reset"></td></tr></table>
-			</form>
-			<script type="text/javascript">
-      function calculate(){
-                var a = document.the.quan.value;
-				if(document.the.bird.value=="eagle"){
-var c=parseInt(a)*50.2;
+			<form>  
+Menu: <select id="firstNumber">
+<option>select bird</option>
+<option  value="15">eagle</option>
+<option value="29.17">spparow</option>
+<option value="110.83">pigeon</option>
+</select> <br><br>
+enter your quantity: Nos<select id="secondNumber">
+<option>number of birds</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option> 
+<option value="5">5</option> 
+<option value="6">6</option> 
+<option value="7">7</option> 
 
-				}
-				if(document.the.bird.value=="spparow"){
-var c=parseInt(a)*96.7;
-
-				}
-				if(document.the.bird.value=="pegion"){
-var c=parseInt(a)*100.8;
-
-				}
-        
-
-
-  document.the.bill.value= c;
-     }
-     </script>
+</select> <br><br>
+<input type="button" onClick="multiplyBy()" Value="buy now" />  <br>
+ <p>The Total cost is :$
+<span id = "result"></span>  
+</p> 
+</form>  
+	 
 	   
       </body>
 </html>
