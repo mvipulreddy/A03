@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+ <!-- <link rel="stylesheet" type="text/css" href="Contact.css">-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Contact.css">
+  <style>
+	  
+	body{
+		background-image:url("https://wallpaperscraft.com/image/butterfly_background_light_color_surface_50738_3840x2160.jpg"); 
+	}
+	form{
+		text-align:center;}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    font-family: Algerian;
+    overflow: hidden;
+    background-color: skyblue;
+    overflow: auto;
+}
+		li {
+    float: left;
+}
+li a{
+    display: block;
+    text-align:center;
+    color:balck;
+    padding: 12px;
+    text-decoration: none;
+}
+li a:hover{
+	background-color:blue;
+
+}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Vipul</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="guestbook">Guest Book</a></li>
+       
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+	<h1 align="center">ORDER THE BIRD</h1>
+			<form name="the">
+	            Menu:
+						1 peice of eagle = $50.2<br>
+						1 peice of  spparow= $96.7<br>
+						1 peice of Pegion = $100.8
+						<br></br>
+				select your bird choice from the menu <br>
+				<table align="center">	<tr>
+			<td><input type="radio" name="bird" value="eagle"> eagle    
+  <input type="radio" name="bird" value="spparow"> spparow   
+  <input type="radio" name="bird" value="pegion">pegion</td></tr>
+				<tr><td> enter your quantity::</td><td><input type="text"  name="quan"  size="50"></td></tr>
+					
+				<tr><td>Your Total bill :</td><td><input type="text"  name="bill"  size="50"></td></tr>
+				<tr><td></td><td><input type="button" value="calculate" onclick="calculate();"/><input type="reset" value="Reset"></td></tr></table>
+			</form>
+			<script type="text/javascript">
+      function calculate(){
+                var a = document.the.quan.value;
+				if(document.the.bird.value=="eagle"){
+var c=parseInt(a)*50.2;
+
+				}
+				if(document.the.bird.value=="spparow"){
+var c=parseInt(a)*96.7;
+
+				}
+				if(document.the.bird.value=="pegion"){
+var c=parseInt(a)*100.8;
+
+				}
+        
+
+
+  document.the.bill.value= c;
+     }
+     </script>
+	   
+      </body>
+</html>

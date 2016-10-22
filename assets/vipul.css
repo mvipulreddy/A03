@@ -1,0 +1,33 @@
+
+table{border:3px solid black ;}
+tr{background-color:green;}
+td{border:3px dashed red;
+padding:15px;}
+
+
+ul{list-style-type:katakana;}
+span{font-style:Italic;}
+body{background-image:url("https://wallpaperscraft.com/image/butterfly_background_light_color_surface_50738_3840x2160.jpg");}
+body{font-size:120%;}
+div{border: 2px solid black;
+	width:200px;
+}
+form{font-size: 50px;}
+
+
+footer
+{
+  background-color: tan; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+header
+{
+  background-color: tan; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
